@@ -23,7 +23,7 @@ class Visualizer:
         plt.tight_layout()
         plt.show()
 
-    def plot_3d(self, sol, label='trajectory', color='blue', arrow_index=300, critical_point=None):
+    def plot_3d(self, sol, arrow_index, label='trajectory', color='blue', critical_point=None):
         """Affiche une trajectoire 3D avec flèche + point critique éventuel"""
         fig = plt.figure(figsize=(10, 7))
         ax = fig.add_subplot(111, projection='3d')
@@ -47,7 +47,7 @@ class Visualizer:
         plt.tight_layout()
         plt.show()
 
-    def plot_projections(self, sol_list, labels, colors, critical_points=None, arrow_index=300):
+    def plot_projections(self, sol_list, labels, colors, arrow_index, critical_points=None):
         """Compare plusieurs solutions sur les projections y(x), z(x), z(y)"""
         fig, axes = plt.subplots(1, 3, figsize=(18, 5))
         for sol, label, color in zip(sol_list, labels, colors):
