@@ -1,8 +1,8 @@
 import numpy as np
-from model import system, jacobian
-from numerical_methods import NumericalMethod
-from visualizer import Visualizer
-from utils import get_critical_point
+from tools.model import Model
+from tools.numerical_methods import NumericalMethod
+from tools.visualizer import Visualizer
+from tools.utils import get_critical_point
 
 # === Paramètres ===
 mu = 1.0
@@ -12,8 +12,8 @@ t = np.linspace(0, 50, 1000)
 init_state = np.array([1.0, 1.5, 2.0])  # cas instable
 
 # === Initialisation ===
-method = NumericalMethod(system=lambda t, y: system(t, y, mu, Q, epsilon),
-                         jacobian=lambda y: jacobian(y, mu, Q, epsilon))
+method = NumericalMethod(system=lambda t, y: Model.system(t, y, mu, Q, epsilon),
+                         jacobian=lambda y: Model.jacobian(y, mu, Q, epsilon))
 viz = Visualizer(t)
 
 # === Résolution ===
