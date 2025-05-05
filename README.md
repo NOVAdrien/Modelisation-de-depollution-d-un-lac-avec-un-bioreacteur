@@ -29,13 +29,14 @@ où :
 
 ```
 .
-├── main.py                # Script principal avec simulations et visualisations
-├── model.py               # Définition du système différentiel
-├── numerical_methods.py   # Implémentation des méthodes numériques
-├── utils.py               # Fonctions utilitaires et points critiques
-└── visualize.py           # Fonctions de visualisation avancées
+├── main.py                # Script principal pour exécuter les simulations
+└── tools/                 # Dossier contenant tous les modules outils
+    ├── __init__.py        # Fichier vide pour rendre tools un package Python
+    ├── model.py           # Définition du système différentiel
+    ├── numerical_methods.py # Implémentation des méthodes numériques
+    ├── utils.py           # Fonctions utilitaires et points critiques
+    └── visualize.py       # Fonctions de visualisation avancées
 ```
-
 ## 🔍 Résultats Clés
 
 ### 1. Analyse de Stabilité (ε=0)
