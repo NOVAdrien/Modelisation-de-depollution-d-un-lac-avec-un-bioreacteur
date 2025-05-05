@@ -75,10 +75,7 @@ python main.py
 
 ## 📊 Exemples de Visualisations
 
-<p align="center">
-  <img src="https://via.placeholder.com/400x300?text=Portrait+de+Phase+3D" alt="Portrait de Phase">
-  <img src="https://via.placeholder.com/400x300?text=Optimisation+du+Débit" alt="Optimisation Q">
-</p>
+Faire tourner les codes pour visualiser nos résultats de simulation numérique.
 
 ## 🌍 Application au Lac Thai (Chine)
 - Volume du lac : 4.5×10⁹ m³
